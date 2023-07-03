@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="container">
-            <div class="col" v-for="item in projects" :key="item.id">
-                <div class="row">
+            <div class="row">
+            <div class="col-4" v-for="item in projects" :key="item.id">
                     <div class="card" style="width: 18rem;">
                         <img :src="item.image" class="card-img-top" :alt="item.name">
                         <div class="card-body">
