@@ -11,7 +11,7 @@
             <a target="_blank" href="mailto:ganiefahmajiet180804@gmail.com"><i class="fa-solid fa-envelope fa-xl" style="color: #000000;"></i></a>
         </div>
     </div>
-    <hr class>
+    <br>
     <div class="copyright"> 
         <p>All Rights Reserved to Ganiefah Majiet &copy; 2023</p>
     </div>
@@ -28,8 +28,14 @@
 .socials{
     width: 100%;
     display: flex;
+    margin-left: 1rem;
     justify-content: center;
     align-items: center;
     gap: 4rem;
 }
+
+.footer{
+    margin-top: 2rem;
+}
+
 </style>
