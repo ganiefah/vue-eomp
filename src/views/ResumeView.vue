@@ -1,6 +1,5 @@
 <template>
     <div>
-<h1>resume</h1>
 <Resume/>
     </div>
 </template>
