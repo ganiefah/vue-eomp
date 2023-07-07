@@ -1,21 +1,27 @@
 <template>
     <div class="contact">
         <h1>Contact Us</h1>
-        <form action="https://formspree.io/f/mzbqoqkr" method="POST" class="row g-3 btm mb-0" target="_blank">
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Enter Your First Name">
+        <form action="https://formspree.io/f/mknlnopk" method="POST" class="row g-3 btm mb-0" target="_blank">
+            <div class="col-12 column">
+                <input type="name" class="form-control"  placeholder="Enter Your First Name" name="name" required  oninvalid="this.setCustomValidity('Please Enter Your First Name')"
+                oninput="this.setCustomValidity('')">
             </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Enter Your Last Name">
-            </div>
-            <div class="col-12">
-              <input type="text" class="form-control"  placeholder="Enter Your Email">
-            </div>
-            <div class="col-12">
-              <input type="number" class="form-control" placeholder="Enter You Contact Number">
+            <div class="col-12 column">
+                <input type="name" class="form-control" placeholder="Enter You Last Name" name="name" required  oninvalid="this.setCustomValidity('Please Enter Your Last Name')"
+                oninput="this.setCustomValidity('')">
+                <div class="next">
+                    <div class="col-6 l">
+                      <input type="name" class="form-control" placeholder="Enter A Email" name="email" required  oninvalid="this.setCustomValidity('Please Enter Your Email')"
+                      oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="col-6">
+                      <input type="text" class="form-control" placeholder="Cell Number" name="number" required  oninvalid="this.setCustomValidity('Please Enter Your Contact Number')"
+                      oninput="this.setCustomValidity('')">
+                    </div>
+                </div>
             </div>
             <div class="mb-3">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Feedback"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Feedback" name="text"></textarea>
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <button type="reset" class="btn btn-primary">Clear</button>
             </div>
@@ -31,8 +37,17 @@
 
 <style scoped>
 h1{
-    color: #FBFACD;
-    text-decoration: underline solid #FBFACD;
+    padding-top: 20px;
+    color: white;
+    text-shadow:4px 4px #A0C49D;
+}
+
+.next {
+    display: flex;
+}
+
+.l{
+    margin-right: .1rem;
 }
 
 button{
@@ -44,17 +59,45 @@ input{
     margin-bottom: 2rem;
 }
 
+
 form{
     margin-right: 10px;
     margin-left: 10px;
 }
 .contact{
-    background: rgb(52,36,101);
-    background: linear-gradient(0deg, rgba(52,36,101,1) 0%, rgba(127,102,157,1) 71%);
     height: 80vh;    
 }
 
-.btm {
+.btn {
+    background-color: #E1ECC8;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px dashed #E1ECC8;
+    box-shadow: grey 0px 2px 5px -1px, black 0px 1px 3px -1px;
+    transition: .4s;
+    width: 7rem;
+    font-weight: bold;
+   }
+   
+   .btn span:last-child {
+    display: none;
+   }
+   
+   .btn:hover {
+    transition: .5s;
+    border: 2px dashed #A0C49D;
+    background-color: white;
+    color: #A0C49D;
+   }
+   
+   .btn:active {
+    background-color: #A0C49D;
+   }
+   
+.btn{
     margin-top: 4rem;
 }
 

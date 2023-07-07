@@ -7,7 +7,7 @@
       <h1>An Aspiring Full Stack <span class="job">Web Developer</span></h1>
     </div>
     <div class="btn">
-      <a href="/src/views/AboutView.vue" class="button">For More Information</a>
+      <a href="/about" class="button"> Press For More Information</a>
     </div>
   </div>
 </template>
@@ -19,13 +19,16 @@ export default {};
 <style scoped>
 
 h1{
-  color:#BA94D1;
+ color: white;
+ 
 }
 .name {
-  color: #FBFACD !important;
+  color: white !important;
+  text-shadow:5px 5px #A0C49D ;
 }
 .job{
-  color: #FBFACD !important;
+  color: white !important;
+  text-shadow:5px 5px #A0C49D ;
 }
 .btn {
   display: flex;
@@ -34,20 +37,20 @@ h1{
 }
 .button {
   padding: 10px ;
-  background-color: #7F669D;
-  color: #fbfacd;
+  background-color: #C4D7B2;
+  color: white;
   border: none;
   text-decoration: none;
   border-radius: 8px;
   width: 12rem;
-  height:3rem;
+  height:4rem;
   transition: .3s;
 }
 
 .button:hover {
-  background-color: #BA94D1;
-  box-shadow: 0 0 0 5px #DEBACE;
-  color: #FBFACD;
+  background-color: #A0C49D;
+  box-shadow: 0 0 0 5px #E1ECC8;
+  color: white;
 }
 
 .img{
