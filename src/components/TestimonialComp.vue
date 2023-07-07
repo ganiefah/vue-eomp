@@ -4,7 +4,7 @@
       <div class="row d-flex justify-content-center">
             <div class="card mb-3" v-for="item in testimonials" :key="item?.id" data-aos="fade-up-right">
               <div class="row g-0">
-                <div class="col-md-4 colS">
+                <div class="col-md-4 cols">
                 <img :src="item.image" class="img-fluid img" :alt="item.name" />
               </div>
               <div class="col-md-8">
@@ -15,6 +15,7 @@
                   </p>
                 </div>
               </div>
+              <hr>
             </div>
           </div>
       </div>
@@ -36,17 +37,25 @@ export default {
 </script>
 
 <style scoped>
-.colS{
+.cols{
   height: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
 .card{
-  width: 75%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+hr{
+  color: black;
 }
 
 img{

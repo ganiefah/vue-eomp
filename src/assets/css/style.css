@@ -1,3 +1,4 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
 *,
 *::after,
 *::before{
@@ -9,34 +10,19 @@
 html,
 body{
   overflow-x:hidden;
+  
 }
 
-/* navbar  */
-/* .nav-link{
-    text-decoration: none;
-    color: white !important;
-    border-bottom:0.5px solid white !important;
-    transition: 0.5s;
-    transition-property: box-shadow;
-}
-
-.nav-link:hover{
-    color: #C5DFF8!important;
-    box-shadow: 0 0 5px rgb(0,140,255),
-                0 0 25px rgb(0,140,255),
-                0 0 50px rgb(0,140,255),
-                0 0 100px rgb(0,140,255);
-} */
 
 .nav-link {
     font-size: 17px;
     background: transparent;
     border: none;
     padding: 1em 1.5em;
-    color: #ffedd3;
+    color: white;
     text-transform: uppercase;
     position: relative;
-    transition: .5s ease;
+    transition: .3s ease;
   }
   
   .nav-link::before {
@@ -46,12 +32,12 @@ body{
     bottom: 0;
     height: 2px;
     width: 0;
-    background-color: #DEBACE;
-    transition: .5s ease;
+    background-color: #E1ECC8;
+    transition: .3s ease;
   }
   
   .nav-link:hover {
-    color: #1e1e2b;
+    color:#E1ECC8;
     transition-delay: .3s;
   }
   
@@ -66,19 +52,19 @@ body{
     bottom: 0;
     height: 0;
     width: 100%;
-    background-color: #DEBACE;
-    transition: .4s ease;
+    background-color: #E1ECC8;
+    transition: .3s ease;
     z-index: -1;
   }
   
   .nav-link:hover::after {
     height: 100%;
-    transition-delay: 0.4s;
-    color: aliceblue;
+    transition-delay: 0.3s;
+    color: #F7FFE5;
   }
 
 .navbar{
-    background-color: #7F669D !important;
+    background-color: #A0C49D !important;
 }
 
 .logo{
@@ -87,19 +73,30 @@ body{
 
 /* home page  */
 .home{
-  background: rgb(52,36,101);
-background: linear-gradient(0deg, rgba(52,36,101,1) 0%, rgba(127,102,157,1) 71%);
-  height: 100vh; 
+  background: #C4D7B2;
+  height: 70vh; 
 }
 
 /* footer  */
 .socials {
+  padding-top: 10px;
     width: 14rem;
     display: flex;
     justify-content: space-between;
 }
 
+.link{
+  padding: 7px;
+  border-radius: 50%;
+}
 
+.link:hover{
+  background-color: #E1ECC8;
+}
+
+.footer{
+  background-color: #A0C49D;
+}
 .copyright {
     width: 100%;
     height: 100%;
